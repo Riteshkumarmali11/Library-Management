@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="css/main_page.css" />
+    <link rel="stylesheet" href="css/pages_about.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/librarian.css" />
+    <link rel="stylesheet" href="css/library_services.css" />
+    <link rel="stylesheet" href="css/chatgpt.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/competative.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- College Name -->
+    <header>
+      <!-- Left: Logo -->
+      <div class="logo">
+        <img src="images/logo-library.png" alt="Logo" />
+      </div>
+  
+      <!-- Right: Contact Information and Date/Time -->
+      <div class="contact-info">
+        <p>
+          <strong>Email: </strong>
+          <a href="mailto:contact@dnyanyogigranthalay.com">contact@dnyanyogigranthalay.com</a> &nbsp;&nbsp; | &nbsp;&nbsp;
+          <strong>Phone: </strong>
+          <a href="tel:+1234567890">7676817726</a>
+        </p><br>
+        <p style="color: #0a4e7b; font-weight:bolder;" id="date-time"></p> <!-- This is where the date and time will show up -->
+      </div>
+    </header>
+  
+    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#carousel"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-info-circle"></i> About Library</a>
+        </li>
+        <li>
+          <a href="#library-services"
+            ><i class="fas fa-cogs"></i>Library Services</a
+          >
+        </li>
+        <li>
+          <a href="#competitive-exams"
+            ><i class="fas fa-graduation-cap"></i> Competitive Exams</a
+          >
+        </li>
+        <li>
+          <a href="#librarian"><i class="fas fa-user-tie"></i> Librarian</a>
+        </li>
+        <li>
+          <a href="#digital-hub"><i class="fas fa-laptop"></i> Digital Hub</a>
+        </li>
+        <li>
+          <a href="#gallery"><i class="fas fa-image"></i> Photo Gallery</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Image Carousel -->
+    <section id="carousel">
+      <div class="carousel" id="carousel">
+        <img
+          src="images/Lab_Photo.jpg"
+          alt="Library Image 1"
+          id="carouselImage"
+        />
+        <div class="pixel-overlay" id="pixelOverlay"></div>
+      </div>
+    </section>
+
+    <section id="digital-hub">
+      <h2><i class="fas fa-book"></i> Digital Hub</h2>
+      <!-- Resource Icons Section -->
+      <div class="resource-icons">
+        <div class="resource-item">
+          <img
+            src="images/question2.png"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>Question Bank B.A</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/question2.png"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>Question Bank B.com</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/question2.png"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>Question Bank B.sc</p>
+        </div>
+
+        <!-- Newspaper Item with Sub-Icons -->
+        <div class="resource-item">
+          <img
+            src="images/pro.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+            onclick="openModal()"
+          />
+          <!-- <i class="fas fa-newspaper" onclick="openModal()"></i> -->
+          <p>Prospectus</p>
+        </div>
+
+        <div class="resource-item">
+          <img
+            src="images/institute.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>Institutional Repository</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/you.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>YouTube</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/e-learn.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>e - Learning</p>
+        </div>
+
+        <div class="resource-item">
+          <img
+            src="images/book5.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>e - Books</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/jour3.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>e - Journals</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/news1.png"
+            alt="Question Paper"
+            class="resource-image"
+             onclick="openNewspaper()"
+          />
+          <p>e - News Papers</p>
+        </div>
+
+        <div class="resource-item">
+          <img
+            src="images/magzin.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+            onclick="openModal1()"
+          />
+          <p>e - Magazine</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/govt1.jpg"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>Govt. Official Sites</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/competat.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>Competitive Exams</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/higher.png"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>Higher Studies</p>
+        </div>
+        <div class="resource-item">
+          <img
+            src="images/s4.jpeg"
+            alt="Question Paper"
+            class="resource-image"
+          />
+          <p>Student Corner</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2>About Us</h2>
+
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">
+            Our Library is not only a storehouse of books, but it also provides
+            internet, e-books, and digital facilities. The library is fully
+            furnished with automation, and there is a Digital Display for the
+            notice board.
+          </div>
+        </div>
+      </div>
+
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">
+            The Reading Room receives leading dailies in English, Kannada,
+            Marathi, and Hindi. Many standard journals, both of general interest
+            and in specialized areas, are being subscribed to.
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 style="color: red; font-weight: bolder">Library Information</h3>
+      <br />
+      <strong style="color: blue">No of Books:</strong>
+      <span style="font-weight: bolder">040406 (28-02-2015)</span><br /><br />
+      <strong style="color: blue">No of Titles:</strong>
+      <span style="font-weight: bolder">13067</span><br /><br />
+      <strong style="color: blue">CDs:</strong>
+      <span style="font-weight: bolder">67</span><br /><br />
+
+      <strong style="color: blue">Library Working Hours:</strong> 08 AM to 5.30
+      PM (Monday to Saturday)<br /><br />
+      <strong style="color: blue">Holidays:</strong> Sunday and Government
+      Public Holidays<br /><br />
+
+      <strong style="color: blue">Collection of Books:</strong> Textbooks,
+      Reference Books: Encyclopedias, Dictionaries, Maps, Year Books, Career
+      Development Books, Competitive Guidance Books.<br />
+      <br />
+      <h4>News papers- 11</h4>
+      <div class="card-deck">
+        <!-- English Card -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">English</h5>
+            <p class="card-text">02</p>
+          </div>
+        </div>
+        <!-- Kannada Card -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Kannada</h5>
+            <p class="card-text">07</p>
+          </div>
+        </div>
+        <!-- Marathi Card -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Marathi</h5>
+            <p class="card-text">02</p>
+          </div>
+        </div>
+        <!-- Hindi Card -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Hindi</h5>
+            <p class="card-text">02</p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Periodicals- 43</h4>
+
+      <div class="card-deck">
+        <!-- English Card -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">English</h5>
+            <p class="card-text">21</p>
+          </div>
+        </div>
+        <!-- Kannada Card -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Kannada</h5>
+            <p class="card-text">17</p>
+          </div>
+        </div>
+        <!-- Marathi Card -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Marathi</h5>
+            <p class="card-text">03</p>
+          </div>
+        </div>
+        <!-- Hindi Card -->
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Hindi</h5>
+            <p class="card-text">02</p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Journals- 24</h4>
+
+      <div class="card-deck">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Monthly</h5>
+            <p class="card-text">13</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Fortnightly</h5>
+            <p class="card-text">01</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Bimonthly</h5>
+            <p class="card-text">01</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Half Yearly</h5>
+            <p class="card-text">04</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Quarterly</h5>
+            <p class="card-text">04</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Weekly</h5>
+            <p class="card-text">01</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h3 style="color: red; font-weight: bolder">Services</h3>
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">Book Circulation</div>
+        </div>
+      </div>
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">Reference Service</div>
+        </div>
+      </div>
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">Current Awareness Service</div>
+        </div>
+      </div>
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">Reprography Service</div>
+        </div>
+      </div>
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">Internet Facility</div>
+        </div>
+      </div>
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">Newly Arrived Books Exhibition</div>
+        </div>
+      </div>
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">Inter-Library Loan Facility</div>
+        </div>
+      </div>
+      <div class="para-card">
+        <div class="icon-column">
+          <span class="check-icon">✔️</span>
+        </div>
+        <div class="content-column">
+          <div class="para">Internal Repository Facility</div>
+        </div>
+      </div>
+
+      <h3 style="color: red; font-weight: bolder">Highlights</h3>
+      <br />
+      <div>
+        Computerization of Library Services, Internet Facility for Students,
+        Book Exhibition, OPAC (Online Public Access Catalog).
+      </div>
+      <br />
+      <div class="image-container">
+        <img
+          src="images/VISION MISSION GOALS.webp"
+          alt="Vision, Mission, Goals"
+        />
+      </div>
+    </section>
+
+    <div id="librarian">
+      <div class="identity-card">
+        <div class="card-header">
+          <h3>Librarian</h3>
+        </div>
+        <div class="card-content">
+          <div class="photo-column">
+            <div class="photo">
+              <img src="images/dodamani.jpg" alt="Librarian Photo" />
+            </div>
+          </div>
+          <div class="info-column">
+            <div class="details">
+              <h3 class="name">
+                <span style="color: #e74c3c">Shri. Pashupati Dodamani</span>
+              </h3>
+              <p class="degree">M.L.I.Sc.UGC/NET</p>
+              <p class="academic-info">
+                Master of Arts in Library Science from XYZ University
+              </p>
+
+              <!-- Additional Information (Initially hidden) -->
+              <div class="more-info">
+                <div>
+                  Library is the heart of Education. Well functioning heart
+                  keeps the body healthy and long life. An efficient library
+                  creates healthy educational atmosphere, keeping this view in
+                  mind library acts accordingly.
+                </div>
+                <p>Contact: pashupati@library.com</p>
+              </div>
+
+              <!-- Read More Button -->
+              <button class="read-more-btn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="library-services">
+      <h2>Library Services</h2>
+      <div class="services-cards">
+        <div class="card" id="book-card">
+          <i class="fas fa-book"></i>
+          <h3>Book Detail</h3>
+        </div>
+        <div class="card" id="periodical-card">
+          <i class="fas fa-newspaper"></i>
+          <h3>Periodicals & Journal</h3>
+        </div>
+        <div class="card" id="notice-card">
+          <i class="fas fa-bell"></i>
+          <h3>Notice Board</h3>
+        </div>
+      </div>
+      <div id="content-display">
+        <table id="book-table" style="display: none">
+          <thead style="background-color: rgb(248, 145, 71);">
+            <tr>
+              <th>Grant</th>
+              <th>Total Books</th>
+              <th>Total Titles</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <table id="journal-table" style="display: none">
+          <thead style="background-color: rgb(242, 162, 58);">
+            <tr>
+              <th>Sr. No.</th>
+              <th>Names</th>
+              <th>Periodicity</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="libr">
+        <h3 style="color: red; font-weight:bolder;">BOOKS FACILITIES:</h3> <br>
+       <div> 2 Books will be issued to all the students on Borrowers card for 15 days.</div> <br>
+       <div> 2 Books will be issued on the PSLL scheme for the entire year to the poor and meritorious students.</div><br>
+       <h3 style="color: red; font-weight:bolder;">JOURNALS AND PERIODICALS FACILITY: </h3><br>
+        Journals and periodicals will be issued to the students on demand for home reading for 1-2 days on the production of identity cards.<br><br> 
+        <h3 style="color: red; font-weight:bolder;">REFERENCE SECTION: </h3><br>
+        The reference section will be kept open during library hours.  <br><br>
+        Books, journals, periodicals, and question papers from the previous year will be issued on identity cards for reference. <br><br>
+        <h3 style="color: red; font-weight:bolder;">LIBRARY WORKING HOURS: </h3><br>
+        Generally, the library will be kept open on all working days. The reading hours of the library are ​<br><br>
+        Monday to Friday 08.00 a.m to 06.00 p.m.<br> Saturday 08.00 a.m to 02.00 p.m. <br><br>
+        A special reading room is provided during examinations from 08.00
+        a.m to 08.00 p.m (Except Sundays and Holidays). <br><br>
+        <h3 style="color: red; font-weight:bolder;"> USER ORIENTATION PROGRAMME: </h3><br>
+        The freshers are formally introduced to the library services
+        and facilities at the beginning of every academic year, class-wise about
+        books, journals, periodicals, and others.<br> <br>
+        <h3 style="color: red; font-weight:bolder;">NEW ARRIVALS DISPLAY: </h3><br><br>
+        Some selected titles of new books acquired by the library are displayed in
+        the New Arrivals Display stand for the benefit of users. These books
+        will be on display for at least one week after that they will be made
+        available to borrow. <br><br>
+        <h3 style="color: red; font-weight:bolder;">INTERLIBRARY LOANS: </h3><br>
+        It is not possible for any institution, however rich its resources, to buy all the books published
+        even in a discipline. Hence it is inevitable to depend on other sister
+        organizations to share information sources for the mutual benefit of the users. <br><br>
+        <h3 style="color: red; font-weight:bolder;">INVOLVEMENT AND BEST PRACTICES INITIATED AND ADOPTED:</h3><br>
+        Computerization of all the library resources and services with
+        multilingual integrated software.<br> Preparation of library profile (Annual
+        & for NAAC).<br> More No. of books to poor and meritorious.<br> Extend library
+        Hours during the Examination season. <br>Display of library information. <br>
+        Open access system.<br> Displaying new arrivals of books. <br>Open to
+        non-library members also for reference.<br> Career/Employment services.<br>
+        Display of newspaper clippings.<br> Article Alert Service. <br>Broadband
+        internet facility for free of cost.<br> Discussion forum on user queries
+        regarding library collection development. <br>Preparation of college
+        Handbook.
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <h2>Gallery</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="images/1.jpeg" alt="Gallery Photo 1">
+        </div>
+        <div class="gallery-item">
+          <img src="images/2.jpeg" alt="Gallery Photo 2">
+        </div>
+        <div class="gallery-item">
+          <img src="images/3.jpeg" alt="Gallery Photo 3">
+        </div>
+        <div class="gallery-item">
+          <img src="images/book5.jpeg" alt="Gallery Photo 4">
+        </div>
+        <div class="gallery-item">
+          <img src="images/face2.png" alt="Gallery Photo 5">
+        </div>
+        <div class="gallery-item">
+          <img src="images/Lab1.jpg" alt="Gallery Photo 6">
+        </div>
+        <!-- Add more gallery-item divs as needed -->
+      </div>
+    </section>
+    
+<!-- Competitive Exam Section -->
+<section id="competitive-exams" class="exams-section">
+  <h2 class="section-title">Competitive Exams</h2>
+  <p class="section-subtitle">Prepare for the exams that shape your future</p>
+
+  <div class="exam-cards">
+      <!-- IAS Exam Card -->
+      <div class="exam-card">
+          <img src="images/upsc.jpeg" alt="IAS Exam" class="exam-icon">
+          <h3 class="exam-title">IAS - Indian Administrative Service</h3>
+          <p class="exam-description">Prepare for the esteemed IAS exams and join the nation’s administrative framework.</p>
+          <button class="learn-more-btn">Learn More</button>
+      </div>
+
+      <!-- IPS Exam Card -->
+      <div class="exam-card">
+          <img src="images/upsc.jpeg" alt="IPS Exam" class="exam-icon">
+          <h3 class="exam-title">IPS - Indian Police Service</h3>
+          <p class="exam-description">Get ready for the challenging IPS exams and protect and serve the nation.</p>
+          <button class="learn-more-btn">Learn More</button>
+      </div>
+
+      <!-- Other Exams Card -->
+      <div class="exam-card">
+          <img src="images/kpsc.jpeg" alt="Other Exams" class="exam-icon">
+          <h3 class="exam-title">KPSC - Karnataka Public Service Commission</h3>
+          <p class="exam-description">Get ready for the challenging KPSC exams</p>
+          <button class="learn-more-btn">Learn More</button>
+      </div>
+      <div class="exam-card">
+        <img src="images/ibps.png" alt="Other Exams" class="exam-icon">
+        <h3 class="exam-title">Bank Exams</h3>
+        <p class="exam-description">Get ready for the challenging Bank exams</p>
+        <button class="learn-more-btn">Learn More</button>
+    </div>
+    <div class="exam-card">
+      <img src="images/net.jpeg" alt="Other Exams" class="exam-icon">
+      <h3 class="exam-title">NET Exams</h3>
+      <p class="exam-description">Get ready for the challenging NET exams</p>
+      <button class="learn-more-btn">Learn More</button>
+  </div>
+  <div class="exam-card">
+    <img src="images/rail.png" alt="Other Exams" class="exam-icon">
+    <h3 class="exam-title">Railway Exams</h3>
+    <p class="exam-description">Get ready for the challenging Railway exams</p>
+    <button class="learn-more-btn">Learn More</button>
+</div>
+  </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-top">
+        <!-- College Address Section -->
+        <div class="footer-column">
+          <p>Shivanand College Kagwad,<br> KA-591223</p>
+          <hr>
+          <div> <p style="color: rgb(236, 240, 237);">Designed By-<br> RM</p></div>
+        </div>
+       
+       
+        <!-- About Library Section -->
+        <div class="footer-column">
+          <h3>About Library</h3>
+          <hr>
+          <ul>
+            <li><a href="#about">About Library</a></li>
+            <li><a href=""> Library Staff</a></li>
+            <li><a href="#services">Brochure</a></li>
+          </ul>
+        </div>
+    
+        <!-- Quick Links Section -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <hr>
+          <ul>
+            <li><a href="#home">ebooks</a></li>
+            <li><a href="#about">emagzins</a></li>
+            <li><a href="#services">ejournal</a></li>
+          </ul>
+        </div>
+    
+        <!-- Social Media Section -->
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <hr>
+          <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+              <img src="images/face2.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+              <img src="images/twitter.png" alt="Twitter" />
+            </a>
+            <a href="https://youtube.com" target="_blank" class="social-icon">
+              <img src="images/youtube.png" alt="YouTube" />
+            </a>
+          </div>
+        </div>
+      </div>
+       <!-- Back to Top Button -->
+       <button id="backToTop" class="back-to-top" title="Go to top">
+        &#8679;
+      </button>
+    </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024@Digital Library. All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+    <!-- Modal Structure -->
+    <div id="newspaperModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Prospectus</h3>
+        <div class="card-container">
+          <div class="card1">
+            <h4>2021-22</h4>
+          </div>
+          <div class="card1">
+            <h4>2022-23</h4>
+          </div>
+          <div class="card1">
+            <h4>2023-24</h4>
+          </div>
+          <div class="card1">
+           <a href="/"> <h4>2024-25</h4></a>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+          <!-- Add more newspaper items here if needed -->
+        </div>
+      </div>
+    </div>
+
+     <!-- Modal Structure -->
+     <div id="newspaperModal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal1()">&times;</span>
+        <h3>News-Paper</h3>
+        <div class="card-container">
+          <div class="card2">
+          <img src="digital_images/Kannada.webp" class="im" />
+          </div>
+          <div class="card2">
+            <img src="digital_images/News18.webp"  class="im"/>
+          </div>
+          <div class="card2">
+            <img src="digital_images/Hosa.webp" class="im"/>
+          </div>
+          <div class="card2">
+            <img src="digital_images/Dailyhunt.webp" class="im"/>
+          </div>
+          <div class="card2">
+            <img src="digital_images/Praja.webp" class="im"/>
+          </div>
+          <div class="card2">
+            <img src="digital_images/uday.webp" class="im"/>
+          </div>
+          <div class="card2">
+            <img src="digital_images/sanje.webp" class="im"/>
+          </div>
+          <div class="card2">
+            <img src="digital_images/deccan.webp" class="im"/>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+          <!-- Add more newspaper items here if needed -->
+        </div>
+      </div>
+    </div>
+
+     <!-- Modal Structure -->
+     <div id="staffModal1" style="display:none;">
+      <div class="modal-content">
+          <span onclick="closeModal()" class="close">&times;</span>
+          <h2>Library Staff</h2>
+          <p>Here you can see details about the library staff.</p>
+      </div>
+  </div>
+    <!-- chatgpt -->
+
+    <!-- ChatGPT Icon -->
+    <!-- ChatGPT Icon with Tooltip -->
+    <div id="chatgpt-icon" onclick="openChatGPT()">
+      <span id="chatgpt-tooltip">Ask me a question</span>
+      <img src="images/chatgpt.png" alt="ChatGPT Icon" id="chatgpt-image" />
+    </div>
+
+    <div id="settings-icon" onclick="toggleSettings()">
+      <img src="images/set2.png" alt="Settings" id="settings-image" />
+    </div>
+
+    <!-- Settings Panel for Color Scheme -->
+    <div id="settings-panel">
+      <h3>Choose a Color Scheme</h3>
+      <div class="color-icon" onclick="changeColor('theme1')">
+        <img src="images/white.png" alt="Theme 1" />
+      </div>
+      <div class="color-icon" onclick="changeColor('theme2')">
+        <img src="images/black.jpeg" alt="Theme 2" />
+      </div>
+      <div class="color-icon" onclick="changeColor('theme3')">
+        <img src="images/blue.png" alt="Theme 3" />
+      </div>
+    </div>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/library_service.js"></script>
+    <script src="js/chatgpt.js"></script>
+    <script src="js/header.js"></script>
+    <script>
+      // Function to load HTML content into a specific element
+      function loadContent(url, elementId) {
+        fetch(url)
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading content:", error));
+      }
+
+      // Load sections on page load
+      window.onload = function () {
+        loadContent("about.html", "about-section");
+        loadContent("digital-hub.html", "digital-hub-section");
+      };
+    </script>
+    <script>
+      // Function to show the modal
+      function staffModal1() {
+          document.getElementById('staffModal1').style.display = 'flex'; // Open the modal
+      }
+
+      // Function to close the modal
+      function closeModal() {
+          document.getElementById('staffModal1').style.display = 'none'; // Close the modal
+      }
+  </script>
+
+  </body>
+</html>
